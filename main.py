@@ -32,6 +32,7 @@ def main():
 
 
 def convert_timestamp(input):
+    # use simple timezones to avoid importing thrid party libraries.
     pacific_timezone = timezone(timedelta(hours=-7))
     central_timezone = timezone(timedelta(hours=-5))
 
